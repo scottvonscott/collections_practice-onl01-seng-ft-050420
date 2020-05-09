@@ -42,3 +42,4 @@ def add_s (array)
     name.insert(-1, "s")
  new_array.insert(1, array[1])
 end
+end
