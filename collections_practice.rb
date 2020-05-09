@@ -38,7 +38,7 @@ end
 def add_s (array)
   new_array = []
   new_array = array.each_with_index.collect do |name, index|
-    break if index == 1
+    next if index == 1
     name.insert(-1, "s")
  new_array.insert(1, array[1])
 end
