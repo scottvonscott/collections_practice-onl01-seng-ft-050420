@@ -41,6 +41,5 @@ def add_s (array)
     next if index == 1
     name.insert(-1, "s")
     new_array[1] = array[1]
-    new_array
 end
 end
