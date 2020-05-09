@@ -40,5 +40,6 @@ def add_s (array)
   new_array = array.each_with_index.collect do |name, index|
     next if index == 1
     name.insert(-1, "s")
+     new_array[1] = array[1]
 end
 end
