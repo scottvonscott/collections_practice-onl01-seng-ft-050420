@@ -37,6 +37,10 @@ end
 
 def add_s (array)
   new_array = []
- new_array = array.reject {|name| name == "feet"}.collect {|name| name.insert(-1, "s")}
- new_array.insert(1, array[1])
+  new_array = array.each_with_index.collect do |name, index|
+    next if index == 1
+    name.insert(-1, "s")
+   end
+  new_array[1] = array[1]
+  new_array
 end
