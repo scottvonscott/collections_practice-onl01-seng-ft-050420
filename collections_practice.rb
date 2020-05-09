@@ -37,6 +37,6 @@ end
 
 def add_s (array)
   new_array = []
- new_array = array.reject {|name| name == "feet"}.collect {|name| name.insert(-1, "s")}
+ new_array = array.reject {|name| name[1]}.collect {|name| name.insert(-1, "s")}
  new_array.insert(1, array[1])
 end
